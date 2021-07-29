@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<head>
+<link rel="icon" type="image/jpg" href="https://icones.pro/wp-content/uploads/2021/02/icone-de-la-lune-bleue.png" />
+<title> Qual seu peso na Lua? </title> 
+</head>
+
+<br><h1>Você já se perguntou qual seria seu peso se estivesse na Lua?</h1> <h5>por: Gabriel Boçoen.</h5> <hr/>
+<img src="https://th.bing.com/th/id/OIP.XTjzSEB38gkH032nyejFFAHaEK?w=280&h=180&c=7&o=5&pid=1.7" alt="imagem 1 da minha página">
+<h5>foto: NASA.</h5> <hr/>
+
+<p> Como sabemos a Lua é o único satélite natural do nosso amável planeta Terra, e você provavelmente já deve ter se imaginado andando pela superfície lunar.<br>
+O que acontece é que a Lua tem muito menos gravidade que a Terra, por ter uma massa menor, então quando estamos na Lua sofremos menos força gravitacional e "flutuamos". Essa força também influencia o nosso peso, a atração gravitacional que nos atrai para baixo aumenta o peso dos objetos que se encontram dentro da atmosfera, na Lua nosso peso sofre menos influencia da gravidade, e consequentemente temos um peso menor. <br>
+Porem se o seu objetivo é emagrecer, viajar para Lua não seria a solução, já que a gravidade influencia em nosso peso, mas a massa de nosso corpo continua a mesma. </p> <br>
+Insira seu peso (Kg):
+
+<input type="text"name="Weight_Value" id="ProductName" value=''/>
+<button> Converter </button>
+<br>
+
+<script>
+
+	function mostra(conteudo) {
+
+		document.write(conteudo);
+		document.write("<br><br>");
+}
+	
+	var input = document.querySelector("input");
+	//input.value = parseInt(input.value);
+
+	var pesoNaTerra = input.value;
+
+	function chamaResultado() {
+		var pesoNaLua = Math.round(input.value / 9.81 * 1.622);
+		alert("Se você pesa " + input.value + " Kg," + " na Lua você pesaria aproximadamente " + pesoNaLua + " Kg.");
+		input.value = "";
+		input.focus();
+	
+
+}
+	var button = document.querySelector("button");
+	button.onclick = chamaResultado;
+	
+
+</script>
+
+<br> <br> <br>
+<img src="https://th.bing.com/th/id/OIP.aUlKSdK-kTV7-n62ObsmhwHaEJ?w=314&h=180&c=7&o=5&pid=1.7" alt="imagem 2 da minha página"> 
+<h6>https://th.bing.com/th/id/OIP.aUlKSdK-kTV7-n62ObsmhwHaEJ?w=314&h=180&c=7&o=5&pid=1.7<br>Acesso: 28/07/2021, às 17:42.</h6><br>
+Mais: Clique <a href= "http://www.learningaboutelectronics.com/Artigos/Calculadora-peso-em-marte.php#resposta"> aqui </a> para calcular seu peso em Marte. 
+<br> <br> <br> <br> <hr/>
+<h6> Projeto com html e javascript, por Gabriel Boçoen. </h6>
