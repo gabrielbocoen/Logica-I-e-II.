@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<head>
+<link rel="icon" type="image/jpg" href="https://images.emojiterra.com/google/android-oreo/512px/1f321.png" />
+<title> °C to °F </title> 
+</head>
+
+<br><h1>Convert Celsius(°C) to Fahrenheit(°F)</h1> <h5>by: Gabriel Boçoen.</h5> <hr/>
+
+°C:
+
+<input type="text"name="Weight_Value" id="ProductName" value=""/>
+<button> Convert to °F </button>
+<br>
+
+<script>
+
+	var input = document.querySelector("input");
+	var celsius = input.value;
+
+	function covertFahrenheit() {
+		var fahrenheit = Math.round(input.value * 1.8 + 32);
+		alert(input.value + "°C = " + fahrenheit + "°F.");
+		input.value = "";
+		input.focus();
+	
+
+}
+	var button = document.querySelector("button");
+	button.onclick = covertFahrenheit;
+	
+
+</script>
+<br>
+(°C × 9/5) + 32 =°F <br><br>
+<img src="https://th.bing.com/th/id/OIP.ERhYhQesQs9uA3aocfh3zQHaE8?w=273&h=182&c=7&o=5&pid=1.7" alt="OK">
+<br> <br> <br> <br> <hr/>
+<h6> Designed with HTML and JavaScript, by Gabriel Boçoen. </h6>
